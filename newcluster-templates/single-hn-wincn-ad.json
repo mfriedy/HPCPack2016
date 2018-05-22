@@ -93,6 +93,15 @@
         "description": "The VM size for the compute nodes, all available VM sizes in Azure can be found at https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-sizes."
       }
     },
+    "computeNodeOsDiskSizeInGB": {
+      "type": "int",
+      "defaultValue": 128,
+      "minValue": 30,
+      "maxValue": 1023,
+      "metadata": {
+        "description": "The os disk size in GB"
+      }
+    },
     "computeNodeInAVSet": {
       "type": "string",
       "defaultValue": "Auto",
@@ -736,6 +745,9 @@
           "vmSize": {
             "value": "[parameters('computeNodeVMSize')]"
           },
+          "osDiskSizeInGB": {
+            "value": "[parameters('computeNodeOsDiskSizeInGB')]"
+          },		  
           "storageAccountType": {
             "value": "[variables('storageAccountTypes')[parameters('computeNodeDiskType')]]"
           },
