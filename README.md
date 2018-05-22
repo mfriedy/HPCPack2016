@@ -31,7 +31,7 @@ This template deploys an HPC Pack cluster with high availability for Windows HPC
 ### Template 4: Single head node cluster for Windows workloads with new Active Directory Domain
 This template deploys an HPC Pack cluster with one **single** head node for Windows HPC workloads in Active Directory Domain forest. The cluster includes one domain controller, one **single** head node with local databases (SQL server 2016 Express version), and a configurable number of **Windows** compute nodes.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMsHpcPack%2FHPCPack2016%2Fmaster%2Fnewcluster-templates%2Fsingle-hn-wincn-ad.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmfriedy%2FHPCPack2016%2Fmaster%2Fnewcluster-templates%2Fsingle-hn-wincn-ad.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
